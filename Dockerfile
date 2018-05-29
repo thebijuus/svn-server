@@ -8,8 +8,8 @@ RUN apt-get update; apt-get install -y apache2 apache2-utils libapache2-svn  &&\
 
         # Create required folders
         mkdir -p /run/apache2/ &&\
-        mkdir /home/svn/
-        mkdir /etc/subversion
+        mkdir /home/svn/ &&\
+        mkdir /etc/subversion &&\
 
         # Create the authentication file for http access
         touch /etc/subversion/passwd
